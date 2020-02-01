@@ -59,6 +59,15 @@ defmodule TaskAppWeb do
       import TaskAppWeb.Gettext
     end
   end
+  
+  def mailer_view do
+    quote do
+      use Phoenix.View, root: "lib/task_app_web/templates",
+                        namespace: TaskAppWeb
+
+      use Phoenix.HTML
+    end
+  end
 
   @doc """
   When used, dispatch to the appropriate controller/view/etc.
