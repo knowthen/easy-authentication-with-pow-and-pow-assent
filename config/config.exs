@@ -32,6 +32,15 @@ config :task_app, :pow,
   extensions: [PowResetPassword],
   controller_callbacks: Pow.Extension.Phoenix.ControllerCallbacks,
   mailer_backend: TaskAppWeb.PowMailer
+  
+config :task_app, :pow_assent,
+  providers: [
+    github: [
+      client_id: "18400da8214fcd97b964",
+      client_secret: "b3d71ad8b37318f19a8dbfd47644e2087b0a8ff0",
+      strategy: Assent.Strategy.Github
+    ]
+  ]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

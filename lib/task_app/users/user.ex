@@ -1,6 +1,7 @@
 defmodule TaskApp.Users.User do
   use Ecto.Schema
   use Pow.Ecto.Schema
+  use PowAssent.Ecto.Schema
   use Pow.Extension.Ecto.Schema,
     extensions: [PowResetPassword]
 

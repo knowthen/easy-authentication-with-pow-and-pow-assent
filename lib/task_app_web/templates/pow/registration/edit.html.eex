@@ -28,3 +28,5 @@
   </div>
 <% end %>
 
+<%= for link <- PowAssent.Phoenix.ViewHelpers.provider_links(@conn),
+  do: content_tag(:span, link) %>
