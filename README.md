@@ -32,8 +32,10 @@ The thing I want to look at is handling authentication in a new phoenix
 project... And I want to consider the question: "how should I handle
 authentication? roll my own or use a library"
 
-Check out the above [screencast](#video) to see my take on handling authentication in
-Elixir / Phoenix web applications.
+Check out the
+[screencast](https://knowthen.com/easy-authentication-in-elixir-and-phoenix-with-the-pow-and-pow_assent-libraries)
+to see my take on handling authentication in Elixir / Phoenix web
+applications.
 
 ## Spoiler alert
 
